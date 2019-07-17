@@ -1,0 +1,6 @@
+#configuration
+.settings
+.classpath
+.project
+#output
+target/

@@ -1,0 +1,7 @@
+#configuration
+.settings
+.classpath
+.project
+.factorypath
+#output
+target/

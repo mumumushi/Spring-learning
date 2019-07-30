@@ -1,0 +1,8 @@
+spring:
+    profiles:
+        active: dev
+    application:
+        name: visitor-auth
+        
+server:
+    port: 8080

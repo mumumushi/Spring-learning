@@ -1,0 +1,33 @@
+spring:
+    profiles: dev
+    application:
+        name: visitor-auth
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/visitor?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+        username: root
+        password: 123456
+    jpa:
+        show-sql: true
+        database: mysql
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLInnoDBDialect
+    redis:
+        database: 1
+        host: 127.0.0.1
+        port: 6379
+        password:
+        jedis:
+            pool:
+                max-active: 8
+                max-idle: 8
+                max-wait: -1ms
+                min-idle: 0
+server:
+    port: 8087
+    
+    

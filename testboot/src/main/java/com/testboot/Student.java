@@ -7,11 +7,18 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@ConfigurationProperties(prefix="student")
 @EnableConfigurationProperties
+@ConfigurationProperties(prefix="student")
 public class Student {
 	private String name;
 	private String thing;
+	
+	public Student() {}
+	
+	public Student(String name, String thing) {
+		this.name = name;
+		this.thing = thing;
+	}
 	
 	public String getName() {
 		return name;
